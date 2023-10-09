@@ -20,6 +20,7 @@ body form {
   max-width: 500px;
   min-width: 300px;
   width: 60vw;
+  padding-bottom: 2em;
 }
 body form label {
   display: block;
@@ -30,11 +31,14 @@ body form .f-set {
   padding: 2rem 0;
   border-bottom: 3px solid #3b3b4f;
 }
+body form .f-set a {
+  color: #dfdfe2;
+}
 body form .last {
   border-bottom: none;
 }
-body form .last .dp {
-  padding: 1px 2px;
+body form .last .lbl .dp {
+  padding: 0 2px;
 }
 body form input {
   width: 100%;
