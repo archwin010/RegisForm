@@ -35,11 +35,18 @@ body {
             border: 0;
             padding: 2rem 0;
             border-bottom: 3px solid #3b3b4f;
+
+            
         }
 
         .last{
             // to remove the last border-bottom
             border-bottom: none;
+
+            .dp {
+                // Removing default CSS properties and values for file 'input' element.
+                padding: 1px 2px;
+            }
         }
 
         // make the input, textarea and select take up the full width of their parent elements.
@@ -47,18 +54,31 @@ body {
             width: 100%;
             margin: 0;
             margin-top: 10px;
+            // want it to blend with the theme of the background
+            background-color: #0a0a23;
+            border: 1px solid #0a0a23;
+            // if you type in the input or textarea elements, you will not be able to see the text. Also, their height is too small to be easy to use.
+            color: #ffffff;
+            min-height: 2em;
         }
 
         textarea{
             width: 100%;
             margin: 0;
             margin-top: 10px;
+            // want it to blend with the theme of the background
+            background-color: #0a0a23;
+            border: 1px solid #0a0a23;
+            // if you type in the input or textarea elements, you will not be able to see the text. Also, their height is too small to be easy to use.
+            color: #ffffff;
+            min-height: 2em;
         }
 
         select{
             width: 100%;
             margin: 10px 0;
             margin-bottom: 0;
+            min-height: 2em;
         }
 
         .inline {
@@ -68,6 +88,21 @@ body {
             margin: 0 0.5em 0 0;
             // the .inline elements are too high on the line
             vertical-align: middle;
+        }
+
+        .submit {
+            display: block;
+            width: 60%;
+            // adjusted its width to never be below '300px'
+            min-width: 300px;
+            // center the submit button and separated it from the fieldset. 
+            margin: 1em auto;
+            // make the submit button look more in line with the rest of the form
+            height: 2em;
+            font-size: 1.1rem;
+            // make the submit button appear more distinct
+            background-color: #3b3b4f;
+            border-color: white;
         }
     }
 }
