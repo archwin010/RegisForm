@@ -20,4 +20,12 @@ body form {
   max-width: 500px;
   min-width: 300px;
   width: 60vw;
+}
+body form .f-set {
+  border: 0;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+body form .last {
+  border-bottom: none;
 }/*# sourceMappingURL=styles.css.map */
